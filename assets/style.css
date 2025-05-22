@@ -100,7 +100,7 @@ header{
 .card{
     width: 270px;
     height: 330px;
-    background-image: linear-gradient(to bottom, white, red, white);
+    background-image: linear-gradient(to bottom, red, red);
     text-align: center;
     border-radius: 15px;
     padding-top: 15px;
