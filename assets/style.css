@@ -71,7 +71,7 @@ header{
 }
 
 .linha_home{
-    background-image: url(./assets/img/sakurarestaurante.jpg);
+    background-image: url(/img/sakurarestaurante.png);
     background-size: cover;
     background-color: red;
     width: 100%;
