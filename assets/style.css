@@ -82,7 +82,7 @@ header{
 }
 
 .linha_home{
-    background-image: url(img/fundosakura.png);
+    background-image: url("img/fundosakura.png");
     background-size: cover;
     background-color: red;
     width: 100%;
