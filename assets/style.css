@@ -1,3 +1,11 @@
+:root {
+    --cor-card: #D01F17;
+    --cor-fundo: #F2F0EB;
+    --cor-header: #0D0D0D;
+    --fonte-card: 'Montserrat';
+    --fonte-preco: 'Open Sans';
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -17,12 +25,13 @@ body{
     height: 100%;
     background-color: #e4e4e4;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-fundo);
 }
 
 header{
     width: 100%;
     height: 100px;
-    background-color: black;
+    background-color: var(--cor-header);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,11 +57,12 @@ header{
 
 .logo h1{
     font-size: 20px;
-    color: white;
+    color: var(--cor-fundo);
+    font-family: var(--fonte-card);
 }
 
 .menu{
-    width: 900px;
+    width: 1000px;
     
 }
 
@@ -62,16 +72,17 @@ header{
 
 .menu ul li a{
     padding: 10px 40px;
-    color: #fff;
+    color: var(--cor-fundo);
     text-decoration: none;
+    font-family: var(--fonte-preco);
 }
 
 .menu ul li a:hover{
-    color: red
+    color: var(--cor-card)
 }
 
 .linha_home{
-    background-image: url(/img/sakurarestaurante.png);
+    background-image: url(/img/fundosakura.png);
     background-size: cover;
     background-color: red;
     width: 100%;
@@ -81,7 +92,6 @@ header{
 }
 
 .container{
-    border: 1px solid black;
     width: 1200px;
     height: 100%;
     padding-top: 50px;
@@ -100,7 +110,7 @@ header{
 .card{
     width: 270px;
     height: 330px;
-    background-image: linear-gradient(to bottom, red, red);
+    background-color: var(--cor-card);
     text-align: center;
     border-radius: 15px;
     padding-top: 15px;
@@ -117,10 +127,13 @@ header{
 }
 
 .card h1{
-    font-size: 25px;
+    font-size: 22px;
+    font-family: var(--fonte-card);
 }
 .card h2{
-    font-size: 20px;
+    font-size: 15px;
+    font-family: var(--fonte-preco);
+    margin-top: 15px;
 }
 .card p{
     font-size: 15px;
@@ -130,7 +143,6 @@ header{
     width: 100%;
     height: 100vh;
     color: gray;
-    border-bottom: 1px solid black;
     display: flex;
     justify-content: center;
 }
@@ -148,13 +160,23 @@ footer{
 .coluna_rodape{
     width: 400px;
     height: 100%;
-    border: 1px solid white;
     display: flex;
     justify-content: center;
     flex-direction: column;
 }
 
+.coluna_rodape h2{
+    margin-top: -120px;
+    font-family: var(--fonte-card);
+    color: var(--cor-fundo);
+}
+
+.coluna_rodape h3{
+    font-family: var(--fonte-preco);
+    color: var(--cor-fundo);
+}
+
 .coluna_rodape img{
-    width: 300px;
+    width: 350px;
     height: 300px;
 }
