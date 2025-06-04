@@ -179,3 +179,25 @@ footer{
     width: 350px;
     height: 300px;
 }
+
+.comprar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 62px;
+    height: 45px;
+    width: 140px;
+    background: linear-gradient(#4B0000);
+    color: white;
+    padding: 15px 30px;
+    font-size: 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    font-family: var(--fonte-card);
+    }
+
+a{
+    color: #e4e4e4;
+}

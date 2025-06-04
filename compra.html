@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Loading...</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #f4f4f4;
+      font-family: Arial, sans-serif;
+    }
+
+    .loading, .mensagem {
+      font-size: 1.5rem;
+      color: #333;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .mensagem {
+      display: none; 
+    }
+
+    .btn-voltar {
+      display: inline-block;
+      background-color: #333;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn-voltar:hover {
+      background-color: #555;
+    }
+
+    .dot {
+      display: inline-block;
+      animation: blink 1s infinite;
+    }
+
+    @keyframes blink {
+      0%, 100% { opacity: 0; }
+      50% { opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="loading">
+    Carregando<span class="dot">.</span><span class="dot">.</span><span class="dot">.</span>
+  </div>
+
+  <div class="mensagem">
+    <p>Com certeza não estou te enrolando</p>
+    <a href="index.html" class="btn-voltar">Voltar para Início</a>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.querySelector('.loading').style.display = 'none';
+      document.querySelector('.mensagem').style.display = 'block';
+    }, 5000);
+  </script>
+
+</body>
+</html>
