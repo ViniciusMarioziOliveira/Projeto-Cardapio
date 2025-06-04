@@ -135,9 +135,6 @@ header{
     font-family: var(--fonte-preco);
     margin-top: 15px;
 }
-.card p{
-    font-size: 15px;
-}
 
 .linha{
     width: 100%;
@@ -187,7 +184,7 @@ footer{
     margin-left: 62px;
     height: 45px;
     width: 140px;
-    background: linear-gradient(#4B0000);
+    background-color: #4B0000;
     color: white;
     padding: 15px 30px;
     font-size: 20px;
